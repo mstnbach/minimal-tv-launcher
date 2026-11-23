@@ -1,0 +1,8 @@
+/build/
+
+/debug.keystore
+
+# Local agent and credential configuration
+/.agents/
+/.codex/
+/.aws/

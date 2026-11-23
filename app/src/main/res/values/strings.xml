@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TV Launcher</string>
+    <string name="settings_title">Launcher settings</string>
+    <string name="empty_home">Your selected apps will appear here</string>
+    <string name="collapse">Collapse  ↑</string>
+    <string name="all_apps">All apps  ↓</string>
+    <string name="empty_apps">No other apps</string>
+    <string name="move">Move</string>
+    <string name="remove_home">Remove from home screen</string>
+    <string name="hide_app">Hide app</string>
+    <string name="app_info">App info</string>
+    <string name="uninstall">Uninstall app</string>
+    <string name="add_home">Add to home screen</string>
+    <string name="cancel">Cancel</string>
+    <string name="move_hint">Arrows: move · Select: save · Back: cancel</string>
+    <string name="uninstall_error">Could not open uninstall. The app may be a system app or uninstalling may be restricted.</string>
+    <string name="close">Close</string>
+    <string name="not_uninstalled">App was not uninstalled</string>
+    <string name="details_fallback">App details cannot be opened directly on this device. Open the system app list?</string>
+    <string name="open">Open</string>
+    <string name="settings_unavailable">System app settings are unavailable</string>
+    <string name="installed_apps">All installed apps</string>
+    <string name="show_app">Show app</string>
+    <string name="back">Back</string>
+    <string name="app_names">App names</string>
+    <string name="hidden_apps">Hidden apps</string>
+    <string name="reset_settings">Reset settings</string>
+    <string name="labels_always">Always show</string>
+    <string name="labels_focus">Show when focused</string>
+    <string name="labels_never">Never show</string>
+    <string name="reset_title">Reset settings?</string>
+    <string name="reset_message">Tile order and hidden apps will be reset. Apps will remain on the device.</string>
+    <string name="reset">Reset</string>
+    <string name="no_hidden">No hidden apps</string>
+    <string name="done">Done</string>
+    <string name="launch_error">Could not open app</string>
+</resources>
