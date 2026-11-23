@@ -1,6 +1,9 @@
 /build/
 
-/debug.keystore
+*.keystore
+*.jks
+*.p12
+*.pfx
 
 # Local agent and credential configuration
 /.agents/

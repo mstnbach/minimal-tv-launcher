@@ -17,6 +17,14 @@ Requires JDK 17, Android SDK Platform 35 and Build Tools 34.0.0. Set `ANDROID_HO
 
 The output is `build/launcher.apk`. On the first build, the script generates a local `debug.keystore`. Keep it to install future builds over earlier ones. The debug key is excluded from Git and is not intended for release distribution; sign release builds with your own securely stored release key.
 
+For a release build, keep your keystore outside the repository and run:
+
+```sh
+./build.sh release /path/to/release.jks your-key-alias
+```
+
+Enter the keystore password when prompted. The signed, verified output is `build/launcher-release.apk`. Use the same signing key for future updates. Do not commit your keystore or password.
+
 Install the APK on the TV and choose TV Launcher as the home app in the system dialog or Android TV settings.
 
 ## Русский
@@ -25,4 +33,4 @@ Install the APK on the TV and choose TV Launcher as the home app in the system d
 
 Приложения можно добавлять на главный экран, перемещать, скрывать и удалять через меню по удержанию кнопки выбора или кнопке Menu. Ряды добавляются автоматически. Кнопка «Все приложения» или стрелка вниз на последнем ряду открывает остальные приложения; «Назад» сворачивает список. В настройках доступны видимость названий, скрытые приложения, сброс и список всех установленных приложений.
 
-Для сборки нужны JDK 17, Android SDK Platform 35 и Build Tools 34.0.0. Укажите путь к SDK в `ANDROID_HOME` или `ANDROID_SDK_ROOT` и выполните `./build.sh`. APK будет создан в `build/launcher.apk`. Скрипт создаёт локальный отладочный ключ `debug.keystore`: сохраните его для обновления установленных сборок. Для публикации нужен собственный защищённый ключ выпуска.
+Для сборки нужны JDK 17, Android SDK Platform 35 и Build Tools 34.0.0. Укажите путь к SDK в `ANDROID_HOME` или `ANDROID_SDK_ROOT` и выполните `./build.sh`. APK будет создан в `build/launcher.apk`. Скрипт создаёт локальный отладочный ключ `debug.keystore`: сохраните его для обновления установленных сборок. Для релизной сборки выполните `./build.sh release /путь/к/ключу.jks alias`: пароль будет запрошен при подписи, а результат появится в `build/launcher-release.apk`. Храните ключ вне репозитория и используйте его для последующих обновлений.
